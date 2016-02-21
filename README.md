@@ -61,5 +61,5 @@ Development:
 
 ### Contributing
 
-* The code is licensed under the `GNU GPL V3`
+* The code is licensed under the [GPL V3](LICENSE)
 * Feel free to contribute to the code

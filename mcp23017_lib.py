@@ -43,14 +43,14 @@ def dirRead(bank=-1):
       print DIRA, DIRB
    else:
       print " --------"
-      print DIRB[0] + "|8    9|" + DIRA[0]
-      print DIRB[1] + "|7   10|" + DIRA[1]
-      print DIRB[2] + "|6   11|" + DIRA[2]
-      print DIRB[3] + "|5   12|" + DIRA[3]
-      print DIRB[4] + "|4   13|" + DIRA[4]
-      print DIRB[5] + "|3   14|" + DIRA[5]
-      print DIRB[6] + "|2   15|" + DIRA[6]
-      print DIRB[7] + "|1   16|" + DIRA[7]
+      print DIRB[7] + "|8    9|" + DIRA[0]
+      print DIRB[6] + "|7   10|" + DIRA[1]
+      print DIRB[5] + "|6   11|" + DIRA[2]
+      print DIRB[4] + "|5   12|" + DIRA[3]
+      print DIRB[3] + "|4   13|" + DIRA[4]
+      print DIRB[2] + "|3   14|" + DIRA[5]
+      print DIRB[1] + "|2   15|" + DIRA[6]
+      print DIRB[0] + "|1   16|" + DIRA[7]
       print " --------"
 
 def latRead(bank=-1):
@@ -72,14 +72,14 @@ def latRead(bank=-1):
       print LATA, LATB
    else:
       print " --------"
-      print LATB[0] + "|8    9|" + LATA[0]
-      print LATB[1] + "|7   10|" + LATA[1]
-      print LATB[2] + "|6   11|" + LATA[2]
-      print LATB[3] + "|5   12|" + LATA[3]
-      print LATB[4] + "|4   13|" + LATA[4]
-      print LATB[5] + "|3   14|" + LATA[5]
-      print LATB[6] + "|2   15|" + LATA[6]
-      print LATB[7] + "|1   16|" + LATA[7]
+      print LATB[7] + "|8    9|" + LATA[0]
+      print LATB[6] + "|7   10|" + LATA[1]
+      print LATB[5] + "|6   11|" + LATA[2]
+      print LATB[4] + "|5   12|" + LATA[3]
+      print LATB[3] + "|4   13|" + LATA[4]
+      print LATB[2] + "|3   14|" + LATA[5]
+      print LATB[1] + "|2   15|" + LATA[6]
+      print LATB[0] + "|1   16|" + LATA[7]
       print " --------"
 
 def setup(pin, mode):
@@ -88,7 +88,7 @@ def setup(pin, mode):
    """
    global DIRA, DIRB
    if(str(pin).isdigit() and (0 < pin < 17)):
-      if(mode == OUTPUT or mode == INPUT):
+      if(mode == OUT or mode == IN):
          if(0 < pin < 9):
             DIRB = DIRB[0:pin - 1] + str(mode) + DIRB[pin:]
             i2c.write_byte_data(0x26, 0x01, int(DIRB, 2))
