@@ -13,19 +13,21 @@ $ sudo apt-get install python-smbus i2c-tools
 
 This library aims at being very similar to the RPi.GPIO library. At the moment it provides the following functions:
 
-`start(address)`: Starts the library on the specified chip address.
-`setup(pin, mode, pullupEnable)`: Writes direction (IN, OUT) to the specified pin. `pullupEnable` enables the internal 100k pullup resistor. Optional, and only works when setting a pin as an input. Valid values are PUHIGH and PULOW.
+* `start(address)`: Starts the library on the specified chip address.
 
-`output(pin, dir)`: Writes state (HIGH, LOW) to the specified pin.
-`input(pin)`: Reads and returns pin state (True, False)
+* `setup(pin, mode, pullupEnable)`: Writes direction (IN, OUT) to the specified pin. `pullupEnable` enables the internal 100k pullup resistor. Optional, and only works when setting a pin as an input. Valid values are PUHIGH and PULOW.
 
-`puRead(bank)`: Reads and returns the pullup registers from both GPIO banks.
+* `output(pin, dir)`: Writes state (HIGH, LOW) to the specified pin.
+
+* `input(pin)`: Reads and returns pin state (True, False)
+
+* `puRead(bank)`: Reads and returns the pullup registers from both GPIO banks.
    * Valid parameter values: **PU_A**, **PU_B**, **ALL** or leave blank for a default graphic diagram of both banks.
 
-`dirRead(bank)`: Reads and returns the direction registers from both GPIO banks.
+* `dirRead(bank)`: Reads and returns the direction registers from both GPIO banks.
    * Valid parameter values: **BANK_A**, **BANK_B**, **ALL** or leave blank for a default graphic diagram of both banks.
 
-`latRead(bank)`: Reads and returns the latch registers from both GPIO banks.
+* `latRead(bank)`: Reads and returns the latch registers from both GPIO banks.
    * Valid parameter values: **LAT_A**, **LAT_B**, **ALL** or leave blank for a default graphic diagram of both banks.
 
 Please refer to the image below for the pin mapping.
