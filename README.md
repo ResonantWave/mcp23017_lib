@@ -15,15 +15,18 @@ This library aims at being very similar to the RPi.GPIO library. At the moment i
 
 `start(address)`: Starts the library on the specified chip address.
 `setup(pin, mode, pullupEnable)`: Writes direction (IN, OUT) to the specified pin. `pullupEnable` enables the internal 100k pullup resistor. Optional, and only works when setting a pin as an input. Valid values are PUHIGH and PULOW.
+
 `output(pin, dir)`: Writes state (HIGH, LOW) to the specified pin.
 `input(pin)`: Reads and returns pin state (True, False)
 
 `puRead(bank)`: Reads and returns the pullup registers from both GPIO banks.
-   - Valid parameter values: **PU_A**, **PU_B**, **ALL** or leave blank for a default graphic diagram of both banks.
+   * Valid parameter values: **PU_A**, **PU_B**, **ALL** or leave blank for a default graphic diagram of both banks.
+
 `dirRead(bank)`: Reads and returns the direction registers from both GPIO banks.
-   - Valid parameter values: **BANK_A**, **BANK_B**, **ALL** or leave blank for a default graphic diagram of both banks.
+   * Valid parameter values: **BANK_A**, **BANK_B**, **ALL** or leave blank for a default graphic diagram of both banks.
+
 `latRead(bank)`: Reads and returns the latch registers from both GPIO banks.
-   - Valid parameter values: **LAT_A**, **LAT_B**, **ALL** or leave blank for a default graphic diagram of both banks.
+   * Valid parameter values: **LAT_A**, **LAT_B**, **ALL** or leave blank for a default graphic diagram of both banks.
 
 Please refer to the image below for the pin mapping.
 
@@ -74,7 +77,7 @@ while 1:
  - [x] ~~Do not use hardcoded i2c address~~
  - [x] ~~Add pullup function~~
  - [ ] Add raw write function
- - [x] Finish function documentation
+ - [x] ~~Finish function documentation~~
 
 ### Contributors
 
