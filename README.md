@@ -57,7 +57,7 @@ while 1:
 ### Contributors
 
 Development:
- * @ResonantWave
+ *  [@ResonantWave](https://github.com/ResonantWave)
 
 ### Contributing
 
