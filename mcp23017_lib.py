@@ -26,7 +26,7 @@ PUHIGH = 1
 PULOW = 0
 
 ADDRESS = 0x20
-def puRead(bank=-1):
+def puRead(bank=None):
    """
    Reads and returns the pullup registers from both GPIO banks
 
@@ -52,7 +52,7 @@ def puRead(bank=-1):
       print PUB[0] + "|1   16|" + PUA[7]
       print " --------"
 
-def dirRead(bank=-1):
+def dirRead(bank=None):
    """
    Reads and returns the direction registers from both GPIO banks
    
@@ -78,7 +78,7 @@ def dirRead(bank=-1):
       print DIRB[0] + "|1   16|" + DIRA[7]
       print " --------"
 
-def latRead(bank=-1):
+def latRead(bank=None):
    """
    Reads and returns the latch registers from both GPIO banks
 
