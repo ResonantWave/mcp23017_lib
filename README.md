@@ -80,6 +80,7 @@ while 1:
  - [x] ~~Add pullup function~~
  - [ ] Add raw write function
  - [x] ~~Finish function documentation~~
+ - [ ] GPIO Zero Support
 
 ### Contributors
 
