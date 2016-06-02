@@ -69,9 +69,9 @@ MCP.setup(1, MCP.OUT)
 
 while 1:
    if(MCP.read(2)):
-      MCP.write(1, MCP.HIGH)
+      MCP.output(1, MCP.HIGH)
    else:
-      MCP.write(1, MCP.LOW)
+      MCP.output(1, MCP.LOW)
 ```
 
 ### TODO list
