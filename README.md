@@ -87,6 +87,9 @@ while 1:
 Development:
  *  [@ResonantWave](https://github.com/ResonantWave)
 
+Debugging:
+ * [@rafacouto](https://github.com/rafacouto)
+
 ### Contributing
 
 * The code is licensed under the [GPL V3](LICENSE)
