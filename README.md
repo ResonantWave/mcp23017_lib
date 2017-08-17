@@ -68,7 +68,7 @@ MCP.setup(2, MCP.IN, MCP.PUHIGH)
 MCP.setup(1, MCP.OUT)
 
 while 1:
-   if(MCP.read(2)):
+   if(MCP.input(2)):
       MCP.output(1, MCP.HIGH)
    else:
       MCP.output(1, MCP.LOW)
